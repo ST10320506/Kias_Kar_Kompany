@@ -12,6 +12,11 @@ namespace Kias_Kar_Kompany.Models
         public required string VehicleType { get; set; } = "Sedan";
         public string? VehicleImageURL { get; set; }
 
+        //referencing the foreign keys
+        public int? Id { get; set; }
+        public int? OwnerId { get; set; }
+
         public Manufacturer? Manufacturer { get; set; }
+        public Owner? Owner { get; set; }
     }
 }
