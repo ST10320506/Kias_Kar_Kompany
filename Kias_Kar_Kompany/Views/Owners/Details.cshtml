@@ -1,0 +1,42 @@
+﻿@model Kias_Kar_Kompany.Models.Owner
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Owner</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OwnerName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OwnerName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OwnerSurname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OwnerSurname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cellnumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cellnumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OwnerEmail)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OwnerEmail)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.OwnerId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
