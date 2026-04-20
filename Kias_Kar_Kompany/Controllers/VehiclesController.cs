@@ -43,7 +43,7 @@ namespace Kias_Kar_Kompany.Controllers
             return View(vehicle);
         }
 
-        // GET: VehiclesController/Create
+        // GET: Vehicles/Create
         public IActionResult Create()
         {
             ViewData["Id"] = new SelectList(_context.Manufacturer, "Id", "Id");
